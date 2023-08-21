@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-nqms
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-ilxh-tenant/mc-quality-dashboard/backend-quality-dashboard-nqms@sha256:9cda0604da3f2f86b4a410b8012b8e28a28a67d6dd1b0571e60376b67e8979a4
+        name: container-image
+        resources: {}
+status: {}
